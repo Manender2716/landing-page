@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #222;
+	padding: 15px 30px;
+	transition: background-color 0.3s ease;
+	z-index: 999;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+	background-color: #444;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.logo {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-links a {
+	color: #ccc;
+	margin-left: 25px;
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+	color: #ff9800;
+}
+
+/* Hero Section */
+.hero-section {
+	height: 100vh;
+	background: linear-gradient(135deg, #1e1e2f, #27293d);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+	padding-top: 70px;
+}
+
+.hero-content h2 {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+
+.hero-content p {
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.btn {
+	background-color: #ff9800;
+	color: white;
+	padding: 12px 24px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #e68900;
+}
+
+/* Content Section */
+.content {
+	padding: 100px 30px 60px;
+	max-width: 900px;
+	margin: auto;
+	line-height: 1.8;
+	color: #333;
+}
+
+form input, form textarea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
